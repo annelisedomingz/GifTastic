@@ -10,12 +10,18 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>GifTastic</title>
   </head>
   <body>
     <div class="container">
-      <h1>Search for Movie Gif</h1>
+      <h1>Movie Gif Search</h1>
       <form class="row search">
         <div class="col-6 searchInput">
           <input type="text" id="search-field" placeholder="Search" />
@@ -27,29 +33,35 @@
           <button type="submit" class="location">Reset</button>
         </div>
       </form>
+      <h3>Some Suggestions</h3>
       <div class="row suggested">
-        <h3>some suggestions</h3>
-        <div class="col-6 suggestionConatined">
-          <div class="col-3 horrorButton">
-            <button type="submit" class="genre">Horror</button>
-          </div>
-          <div class="col-3 actionButton">
-            <button type="submit" class="genre">Action</button>
-          </div>
-          <div class="col-3 comedyButton">
-            <button type="submit" class="genre">Comedy</button>
-          </div>
-          <div class="col-3 romanceButton">
-            <button type="submit" class="genre">Romance</button>
-          </div>
-          <div class="col-3 ScienceButton">
-            <button type="submit" class="genre">Science Fiction</button>
-          </div>
-          <div class="col-3 FantasyButton">
-            <button type="submit" class="genre">Fantasy</button>
-          </div>
+        <div class="col-3 horrorButton">
+          <button type="submit" class="genre">Horror</button>
+        </div>
+        <div class="col-3 actionButton">
+          <button type="submit" class="genre">Action</button>
+        </div>
+        <div class="col-3 comedyButton">
+          <button type="submit" class="genre">Comedy</button>
+        </div>
+        <div class="col-3 romanceButton">
+          <button type="submit" class="genre">Romance</button>
+        </div>
+        <div class="col-3 ScienceButton">
+          <button type="submit" class="genre">Science Fiction</button>
+        </div>
+        <div class="col-3 FantasyButton">
+          <button type="submit" class="genre">Fantasy</button>
+        </div>
+        <div class="col-3 adventureButton">
+          <button type="submit" class="genre">Adventure</button>
+        </div>
+        <div class="col-3 dramaButton">
+          <button type="submit" class="genre">Drama</button>
         </div>
       </div>
     </div>
+
+    <script src="src/app.js"></script>
   </body>
 </html>
