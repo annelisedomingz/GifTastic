@@ -43,8 +43,18 @@ function renderGif(response) {
 
 //
 
-function searchCityInput(event) {
+function searchMovieInput(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-field");
   search(searchInput.value);
 }
+
+let changeMovie = document.querySelector(".row.search");
+changeMovie.addEventListener("submit", searchMovieInput);
+
+function clearGifs() {
+  document.getElementById("gif-results").innerHTML = "";
+}
+
+let resetBtn = document.getElementById("reset-btn");
+resetBtn.addEventListener("click", clearGifs);
